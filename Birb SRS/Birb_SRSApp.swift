@@ -13,6 +13,5 @@ struct Birb_SRSApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: Taxon.self)
     }
 }

@@ -14,7 +14,8 @@
 		FA1AA71F2BB0FEB500D40899 /* Birb_SRSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AA71E2BB0FEB500D40899 /* Birb_SRSTests.swift */; };
 		FA1AA7292BB0FEB500D40899 /* Birb_SRSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AA7282BB0FEB500D40899 /* Birb_SRSUITests.swift */; };
 		FA1AA72B2BB0FEB500D40899 /* Birb_SRSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AA72A2BB0FEB500D40899 /* Birb_SRSUITestsLaunchTests.swift */; };
-		FA1AA7392BB0FED100D40899 /* Taxon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AA7382BB0FED100D40899 /* Taxon.swift */; };
+		FA21C5812BB51D1600EE4D9E /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21C5802BB51D1600EE4D9E /* QuizView.swift */; };
+		FA21C5852BB5211700EE4D9E /* INatObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21C5842BB5211700EE4D9E /* INatObservation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,8 @@
 		FA1AA7242BB0FEB500D40899 /* Birb SRSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Birb SRSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1AA7282BB0FEB500D40899 /* Birb_SRSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birb_SRSUITests.swift; sourceTree = "<group>"; };
 		FA1AA72A2BB0FEB500D40899 /* Birb_SRSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birb_SRSUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FA1AA7382BB0FED100D40899 /* Taxon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taxon.swift; sourceTree = "<group>"; };
+		FA21C5802BB51D1600EE4D9E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		FA21C5842BB5211700EE4D9E /* INatObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INatObservation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +98,9 @@
 		FA1AA70C2BB0FEB400D40899 /* Birb SRS */ = {
 			isa = PBXGroup;
 			children = (
+				FA21C57F2BB51D0600EE4D9E /* Views */,
 				FA1AA7372BB0FEC300D40899 /* Model */,
 				FA1AA70D2BB0FEB400D40899 /* Birb_SRSApp.swift */,
-				FA1AA70F2BB0FEB400D40899 /* ContentView.swift */,
 				FA1AA7112BB0FEB500D40899 /* Assets.xcassets */,
 				FA1AA7132BB0FEB500D40899 /* Preview Content */,
 			);
@@ -133,9 +135,18 @@
 		FA1AA7372BB0FEC300D40899 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FA1AA7382BB0FED100D40899 /* Taxon.swift */,
+				FA21C5842BB5211700EE4D9E /* INatObservation.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FA21C57F2BB51D0600EE4D9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA1AA70F2BB0FEB400D40899 /* ContentView.swift */,
+				FA21C5802BB51D1600EE4D9E /* QuizView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA21C5852BB5211700EE4D9E /* INatObservation.swift in Sources */,
 				FA1AA7102BB0FEB400D40899 /* ContentView.swift in Sources */,
+				FA21C5812BB51D1600EE4D9E /* QuizView.swift in Sources */,
 				FA1AA70E2BB0FEB400D40899 /* Birb_SRSApp.swift in Sources */,
-				FA1AA7392BB0FED100D40899 /* Taxon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +454,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +484,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
